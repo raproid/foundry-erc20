@@ -1,14 +1,30 @@
-# Compiler files
+# Ignore dependencies, which can be reinstalled via forge install
+lib/
+
+# Ignore build artifacts
 cache/
 out/
+zkout/
+.cache/
 
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
+# Ignore development broadcast logs
+broadcast/
 
 # Docs
 docs/
 
-# Dotenv file
+# Ignore local env vars
 .env
+
+# Ignore Forge's fuzzing coverage files
+.forge-coverage/
+
+# Ignore Goland IDE files
+.idea/
+
+# Ignore zksync's generated files
+anvil-zksync.log
+foundryup-zksync
+
+# Ignore local macOS files
+.DS_STORE
