@@ -4,7 +4,7 @@ pragma solidity 0.8.19;
 
 // ManualToken is a simple ERC20 token contract with manual minting and burning capabilities.
 
-contract ManualToken {
+contract ManualRToken {
     // _address_ assigned _amount_ of tokens
     mapping (address => uint256) private s_balances;
 
